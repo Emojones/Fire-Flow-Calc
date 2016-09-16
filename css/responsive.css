@@ -1,0 +1,52 @@
+/**********************
+Media Query
+**********************/
+
+/*TABLET LANDSCAPE*/
+@media screen and (min-width:769px) and (max-height: 780px){
+    header{
+    background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.85)),
+        url(../images/12339083_1033465046719892_3078694038312133848_o.jpg) no-repeat -450px -590px;
+    padding: 2rem 0rem 2rem;
+    }    
+}
+
+/*TABLET PORTRAIT*/
+@media screen and (max-width: 769px){
+ header{
+    background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.85)),
+        url(../images/12339083_1033465046719892_3078694038312133848_o.jpg) no-repeat -600px -590px;
+    }
+    
+/*Set the spacing around the radio buttons so they aren't on top of each other*/
+input[type="radio"]{
+    display: inline-block;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }    
+}
+
+
+
+
+/*PHONES UPTO IPHONE 6 PLUS*/
+@media screen and (max-width: 415px){
+    .instruct{
+        padding-bottom: 3px;
+    }
+    
+    .exposureSides{
+        display: inline-block;
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+    
+    .formTitle{
+        text-align: center;
+    }
+    
+    
+}

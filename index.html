@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ISO Flow Calculator</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/responsive.css">
+<meta name="viewport" content="initial-scale=1.0">
+</head>
+<body>
+    
+<header class="topBanner">Required Fire Flow Calculator (ISO)</header>
+
+<div class="instruct">
+            <h2>Instructions:</h2>
+            <p>1) Enter the length and width, in feet, of the subject buildling and the number of floors of the building.</p>
+            <p>2) Select an option based on how combustible the subject building is.</p>
+            <p>3) If there are an buildings with exposures to the subject select their distance, in feet, from the options available.</p>
+</div>
+
+<form name="isoCalc" id="isoCalc">    
+<div class="building">
+    <h2 class="formTitle">Subject Building Dimensions</h2>
+    <section class="buildingDimensions">    
+        <label for="length">Length:<input type="number" id="length" name="length" min="1" value="1"></label>
+        <label for="width">Width:<input type="number" id="width" name="width" min="1" value="1"></label>
+        <label for="floors">#Floors:<input type="number" id="floors" name="floors" min="1" value="1"></label>
+    </section>
+</div>
+
+<div class="combust">
+    <h2 class="formTitle">Subject Combustibility</h2>
+    <section class="subjectCombust">
+        <label for="combustC1"><input type="radio" name="combust" value="0.75" id="combustC1" class="subjCombustRadio">C-1 (Noncombustible)</label>
+        <label for="combustC2"><input type="radio" name="combust" value="0.85" id="combustC2" class="subjCombustRadio">C-2 (Limited Combustibility)</label>
+        <label for="combustC3"><input type="radio" name="combust" value="1"  id="combustC3" class="subjCombustRadio">C-3 (Combustible)</label>
+        <label for="combustC4"><input type="radio" name="combust" value="1.15" id="combustC4" class="subjCombustRadio">C-4 (Free Burning)</label>
+        <label for="combustC5"><input type="radio" name="combust" value="1.25" id="combustC5" class="subjCombustRadio">C-5 (Rapid or Flash Burning)</label>
+    </section>
+</div>
+
+<div class="exposures">
+    <h2 class="formTitle">Closest Exposure (Distance in Feet)</h2>  
+    <section class="exposureSides">
+      <label for="side1None"><input type="radio" name="exposures" value="0" id="side1None">None</label><br>
+      <label for="side1Zero" class="red"><input type="radio" name="exposures" value="0.22" id="side1Zero">0-10</label><br>
+      <label for="side1Eleven" class="orange"><input type="radio" name="exposures" value="0.18" id="side1Eleven">11-30</label><br>
+      <label for="side1Thirtyone" class="peach"><input type="radio" name="exposures" value=".013" id="side1Thirtyone">31-60</label><br>
+      <label for="side1Sixtyone" class="lime"><input type="radio" name="exposures" value="0.09" id="side1Sixtyone">61-100</label><br>
+      <label for="side1hundered" class="blue"><input type="radio" name="exposures" value="0.04" id="side1hundered">101-500</label>
+    </section>
+</div>
+   
+<div class="results">
+    <h2 class="formTitle">Construction Type/Required Flow (GPM)</h2>
+    <label for="test1">Class 1(Frame)<input type="number" name="test1" id="class1"></label>
+    <label for="test2">Class 2(Joisted-Masonry)<input type="number" name="test2" id="class2" readOnly="true"></label>
+    <label for="test3">Class 3(Non-Combustible)<input type="number" name="test3" id="class3" readOnly="true"></label>
+    <label for="test4">Class 4(Fire Resistive)<input type="number" name="test4" id="class4" readOnly="true"></label>
+</div>
+
+<button type="reset" class="button">Reset</button>
+<button type="button" id="calculateButton" class="button">Calculate</button>
+</form>
+<script src="scripts/app.js"></script>
+</body>
+</html>

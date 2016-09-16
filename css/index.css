@@ -1,0 +1,99 @@
+/*************
+GENERAL
+**************/
+
+body{
+	background-color: #413D3D;
+	color: white;
+    font-familty: Helvetica, Arial, sans-serif;
+}
+
+.formTitle{
+    font-weight: 900;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+#isoCalc{
+ margin-left: 2%   
+}
+
+
+
+/**************
+Instructions Block
+**************/
+/*Style the block of instructions*/
+.instruct{
+    display: block;
+    background-color: #FF9900;
+    max-width: 100%;
+    color: #413D3D;
+    margin-top: -18px;
+    padding-left: 1rem;
+ }
+
+
+
+/**************
+HEADER
+**************/
+/*Style the header banner*/
+header{
+	text-align: center;
+    max-width: 100%;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.85)),
+        url(../images/12339083_1033465046719892_3078694038312133848_o.jpg) no-repeat 0px -540px;
+    padding: 1rem 0rem 8rem;
+}
+
+
+
+/**************
+Parts
+**************/
+
+.exposureSides{
+    display: inline-block;
+    padding: 0 2%;
+    max-width: 90%;
+    margin-top: -24px;
+}
+
+/*Set the spacing around the radio buttons so they aren't on top of each other*/
+input[type="radio"]{
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    display: inline-block;
+    padding: 0 2%;
+    max-width: 90%;     
+}
+
+/*Button styling*/
+.button{
+    display:block;
+    float: right;
+    border: none;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background : #FF9900;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+input[type="number"]{
+    border: inset;
+    padding: 5px;
+    margin-left: 7px;
+}
+
+#calculateButton{
+    float:left;
+}
