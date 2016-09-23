@@ -8,7 +8,13 @@ Media Query
     background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.85)),
         url(../images/12339083_1033465046719892_3078694038312133848_o.jpg) no-repeat -450px -590px;
     padding: 2rem 0rem 2rem;
-    }    
+    }  
+    
+    .results label {
+        max-width: 90%;
+        display: block;
+        margin-bottom: 16px;
+    }
 }
 
 /*TABLET PORTRAIT*/
@@ -26,7 +32,15 @@ input[type="radio"]{
     label {
         display: block;
         margin-bottom: 10px;
-    }    
+    }
+    
+    .results label {
+        margin-bottom: 2rem;
+    }
+    
+    .results input {
+        float: right;
+    }
 }
 
 
@@ -34,9 +48,7 @@ input[type="radio"]{
 
 /*PHONES UPTO IPHONE 6 PLUS*/
 @media screen and (max-width: 415px){
-    .instruct{
-        padding-bottom: 3px;
-    }
+   
     
     .exposureSides{
         display: inline-block;
@@ -48,5 +60,12 @@ input[type="radio"]{
         text-align: center;
     }
     
+    .results label{
+    display: block;
+    max-width: 70%;
+    margin-bottom: 2rem;
+    }
+    
+
     
 }

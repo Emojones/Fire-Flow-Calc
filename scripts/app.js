@@ -4,14 +4,15 @@
 //Note: written in just JavaScript to compensate for possible blocking of jquery or frameworks by IT Security
 
 
-var length;
-var width;
-var floors;
-var squareFoot;
-var occupancyFactor;
-var adjustedGPM;
-var exposureDist;
-var final;
+var length = 1;
+var width = 1;
+var floors = 1;
+var squareFoot = 0;
+var occupancyFactor = 0;
+var adjustedGPM = 0;
+var exposureDist=0;
+var final = 0;
+
 
 //calculates the effective area of the subject building
 function effectiveArea(){
@@ -35,8 +36,8 @@ function exposure(){
 
 //takes the coefficients from occupancy and exposures and mutliplies them with the effective area. still requires rounding.
 function maths (occupancyFactor, exposuresDist) {
-    final = squareFoot * occupancyFactor * (1 + exposuresDist);
-    return final;
+   final = (squareFoot * occupancyFactor * (1+exposureDist));
+    //return final;
 };
 
 //iso requires rounding at certain points
@@ -72,7 +73,7 @@ function finalRounding (i) {
         }
     };
     maths();
-    document.getElementById("class1").value = finalRounding (1.5);
+//document.getElementById("class1").value = finalRounding (1.5);
 //document.getElementById("class2").value = finalRounding (1);
 //document.getElementById("class3").value = finalRounding (0.8);
 //document.getElementById("class4").value = finalRounding (0.6);

@@ -5,7 +5,8 @@ GENERAL
 body{
 	background-color: #413D3D;
 	color: white;
-    font-familty: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
 }
 
 .formTitle{
@@ -18,20 +19,10 @@ body{
  margin-left: 2%   
 }
 
-
-
-/**************
-Instructions Block
-**************/
-/*Style the block of instructions*/
-.instruct{
-    display: block;
-    background-color: #FF9900;
-    max-width: 100%;
-    color: #413D3D;
-    margin-top: -18px;
-    padding-left: 1rem;
- }
+.results{
+    max-width: 90%;
+    
+}
 
 
 
@@ -51,6 +42,21 @@ header{
 }
 
 
+/**************
+Instructions Block
+**************/
+/*Style the block of instructions*/
+.instruct{
+    display: block;
+    background-color: #FF9900;
+    max-width: 100%;
+    color: #413D3D;
+    margin-top: -18px;
+    padding: 1rem;
+ }
+
+
+
 
 /**************
 Parts
@@ -60,7 +66,6 @@ Parts
     display: inline-block;
     padding: 0 2%;
     max-width: 90%;
-    margin-top: -24px;
 }
 
 /*Set the spacing around the radio buttons so they aren't on top of each other*/
@@ -92,8 +97,4 @@ input[type="number"]{
     border: inset;
     padding: 5px;
     margin-left: 7px;
-}
-
-#calculateButton{
-    float:left;
 }
